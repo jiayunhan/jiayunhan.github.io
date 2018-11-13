@@ -1,0 +1,204 @@
+% LaTeX resume using res.cls
+\documentclass[margin]{res}
+\setlength{\textwidth}{5.1in} % set width of text portion
+\usepackage{hyperref}
+\usepackage{times}
+\usepackage{color}
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} 	% This should be set AFTER setting up the page geometry
+\pagestyle{fancy} 		% options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{}\rfoot{\thepage}
+
+\newcommand{\ignore}[1]{}
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+ \moveleft.5\hoffset\centerline{\LARGE \bf Yunhan (Jack) Jia}
+% Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height .5pt}\smallskip
+
+\moveleft1\hoffset\vbox{
+\begin{minipage}[t]{0.5\textwidth}
+    \flushleft
+    1195 Bordeaux Dr, Unit 16725\\ 
+    Baidu USA,\\
+    Sunnyvale, CA 94089\\
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.75\textwidth}
+    %\flushright
+    \flushleft
+    Email: \href{mailto:jiayunhan@baidu.com}{\texttt{jiayunhan@baidu.com}}\\
+    Homepage: \textbf{\url{http://web.eecs.umich.edu/~jackjia/}}\\
+    Tel: (+1) 206-458-9830
+\end{minipage}
+}
+
+\begin{resume}
+
+
+\section{RESEARCH \\ INTERESTS}
+Internet of Things security; Autonomous vehicle security; Mobile system security; Mobile networking \\
+\textit{I like to approach system security problems through systematic program analysis and design}
+
+
+
+
+\section{EDUCATION} 
+University of Michigan, Ann Arbor \hfill 09/2013-04/2018 \\
+PhD student in Computer Science and Engineering
+\begin{itemize}
+\item[-] Advisor: Professor \textbf{Z. Morley Mao}
+\item[-] Thesis: Program Analysis based Approaches to Ensure Security and Safety of Emerging Software Platforms
+\end{itemize}
+
+Shanghai Jiaotong University, Shanghai, China \hfill 09/2009-06/2013 \\
+Bachelor of Engineering in Software Engineering
+\begin{itemize}
+\item[-] Advisor: Professor \textbf{Haibo Chen}
+\end{itemize}
+%Rank: 1/91, Major GPA: 3.84/4.00, Cumulative GPA: 3.82/4.00
+
+\section{WORK\\ EXPERIENCE}
+\textbf{Senior Security Scientist} \hfill 04/02018-present\\
+X-Lab, Baidu USA, US
+\textbf{Threat Research Engineer Intern} \hfill 05/2017-08/2017 \\
+Threat Research Team, Palo Alto Networks, US
+
+\textbf{Research Intern} \hfill 06/2015-08/2015 \\
+QoE Lab, T-Mobile, US
+
+\textbf{Research Intern} \hfill 06/2014-08/2014 \\
+QoE Lab, T-Mobile, US
+
+\textbf{Intern} \hfill 08/2012-09/2012 \\
+CSS Lab, Microsoft APGC
+
+
+%%%%%%%%
+\section{PUBLICATIONS}
+
+Shichang Xu, \underline{Yunhan Jack Jia}, Z. Morley Mao, Subhabrata Sen,
+Dissecting HAS VOD Services for Cellular: Performance, Root Causes and Best Practices, Proceedings of the 17th Internet Measurement Conference (IMC), 2017
+
+Ding Zhao, Yaohui Guo, \underline{Yunhan Jack Jia}, 
+TrafficNet: An Open Naturalistic Driving Scenario Library, Proceedings of the 20th IEEE International Conference on Intelligent Transportation System Conference (ITSC), 2017 \href{http://web.eecs.umich.edu/\~jackjia/material/trafficnet\_itsc17.pdf}{\color{blue}{[PDF]}}
+
+\underline{Yunhan Jack Jia}, Ding Zhao, Qi Alfred Chen, Z. Morley Mao,
+Towards Secure and Safe Appified Automated Vehicles, Proceedings of the 28th IEEE Intelligent Vehicles Symposium (IV), 2017 \href{https://arxiv.org/pdf/1702.06827.pdf}{\color{blue}{[PDF]}}
+
+\underline{Yunhan Jack Jia}, Qi Alfred Chen, Shiqi Wang, Amir Rahmati, Earlence Fernandes, Z.Morley Mao, Atul Prakash, 
+ContexIoT: Towards Providing Contextual Integrity to Appified IoT Platforms, Proceedings of the 24th Network and Distributed System Security Symposium (NDSS),2017 \href{http://web.eecs.umich.edu/\~jackjia/material/contexiot\_ndss17.pdf}{\color{blue}{[PDF]}}
+
+\underline{Yunhan Jack Jia}, Qi Alfred Chen, Yikai Lin, Chao Kong, Z.Morley Mao, 
+Open Port for Bob and Mallory: Open Port Usage in Android Apps and Security Implications, Proceedings of the 2nd IEEE European Symposium on Security and Privacy (EuroS\&P),2017 \href{http://web.eecs.umich.edu/\~jackjia/material/open\_euro17.pdf}{\color{blue}{[PDF]}}
+
+Yuru Shao, Jason Ott, \underline{Yunhan Jack Jia}, Zhiyun Qian, and Z. Morley Mao,
+The Misuse of Android Unix Domain Sockets and Security Implications, Proceedings of the 23th ACM Conference on Computer and Communications Security (CCS),2016 \href{http://web.eecs.umich.edu/\~jackjia/material/misuse\_ccs16.pdf}{\color{blue}{[PDF]}}
+
+\underline{Yunhan Jack Jia}, Qi Alfred Chen, Z. Morley Mao, Jie Hui, Kranthi Sontineni, Alex Yoon, Samson Kwong, and Kevin Lau, 
+Performance Characterization and Call Reliability Problem Diagnosis for Voice over LTE, Proceedings of the 21th ACM Annual 
+International Conference on Mobile Computing and Networking (MobiCom),2015 \href{http://web.eecs.umich.edu/\~jackjia/material/performance\_mobicom15.pdf}{\color{blue}{[PDF]}}
+
+Qi Alfred Chen, Zhiyun Qian, \underline{Yunhan Jack Jia}, Yuru Shao, and Z. Morley Mao, Static Detection of Packet Injection
+Vulnerabilities -- A Case for Identifying Attacker-controlled Implicit Information Leaks, Proceedings of the 22nd ACM
+Conference on Computer and Communications Security (CCS), 2015. \href{http://web.eecs.umich.edu/\~jackjia/material/static\_ccs15.pdf}{\color{blue}{[PDF]}}
+
+\iffalse
+\section{POSTERS/DEMOS}
+
+\underline{Yunhan Jack Jia}, Qi Alfred Chen, and Z. Morley Mao, VoLTE Data Free-Ride Attack: A Case of Exploiting the Unprotected Voice Channel, Poster in 24th USENIX Security Symposium (Security), 2015.
+
+Qi Alfred Chen, Zhiyun Qian, \underline{Yunhan Jack Jia}, Yuru Shao, and Z. Morley Mao, PacketGuardian: Systematic Detection of
+Packet Injection Vulnerabilities using Precise Static Analysis, Poster in 24th USENIX Security Symposium (Security), 2015.
+
+\underline{Yunhan Jack Jia}, Yihua Guo, Z. Morley Mao, Sung-Ju Lee, Collaborative DoS Attack against Cloud-hosted Web Services, Poster in 23th USENIX Security Symposium (Security), 2014. 
+
+Qi Alfred Chen, \underline{Yunhan Jack Jia}, Zhiyun Qian and Z. Morley Mao, SystemLeakalyzer: Systematically Detecting System Side-Channels, Poster in 23th USENIX Security Symposium (Security), 2014.
+
+Sanae Rosen, Hongyi Yao, Ashkan Nikravesh, \underline{Yunhan Jack Jia}, David Choffnes, Z Morley Mao, Demo: mapping global mobile performance trends with mobilyzer and mobiperf (MobiSys), 2014
+\fi
+
+\section{PATENTS}
+Monitoring Wireless Data Consumption, US Patent No. US20170005989 \href{https://www.google.com/patents/US20170005989}{\color{blue}{[Link]}}
+
+Cross-Layer Link Failure Alerts, US Patent No. US20160065433 \href{https://www.google.com/patents/US20160065433}{\color{blue}{[Link]}}
+
+Pathway-based Data Interruption Detection, US Patent No. US20160277952 \href{https://www.google.com/patents/US20160277952}{\color{blue}{[Link]}}
+
+
+\section{TALKS}
+
+Lessons Learnt from Securing Modern IoT and Autonomous Vehicle Platform
+\begin{itemize}
+    \item[-] Tech talk at Palo Alto Networks, Inc. Santa Clara, USA, July 2017
+\end{itemize}
+
+
+Towards Secure and Safe Appified Automated Vehicles
+\begin{itemize}
+	\item[-] 28th IEEE Intelligent Vehicles Symposium (IV), Redondo Beach, USA, June 2017
+\end{itemize}
+
+Open Port for Bob and Mallory: Open Port Usage in Android Apps and Security Implications
+\begin{itemize}
+	\item[-] 2nd IEEE European Symposium on Security and Privacy (EuroS\&P), Paris, France, April 2017
+\end{itemize}
+
+ContexIoT: Towards Providing Contextual Integrity to Appified IoT Platforms
+\begin{itemize}
+	\item[-] 24th Network and Distributed System Security Symposium (NDSS), San Diego, USA, Feb 2017
+\end{itemize}
+
+SmartPhone, SmartHome, and SmartCar: Lessons Learnt from Securing Modern Appified Platform
+\begin{itemize}
+\item[-] Invited talk at Shanghai Jiaotong University (SJTU), Shanghai, China, Jan 2017
+\end{itemize}
+
+Performance Characterization and Call Reliability Problem Diagnosis for Voice over LTE
+\begin{itemize}
+\item[-] 21st  ACM Annual International Conference on Mobile Computing and Networking (MobiCom), Paris, France, Sep 2015
+\end{itemize}
+
+
+
+\ignore{
+\section{RECENT\\ PROJECTS}
+
+\textbf{Characterizing and } \hfill 08/2015-present 
+\begin{itemize}
+\item[-] Identify native layer interfaces that can be leveraged to access sensitive data or perform privileged operations, including the sysfs filesystem and local sockets.\itemsep -2pt
+\item[-] Collect data from latest Android phones and analyze their SEAndroid policies to reveal insecure native interfaces that could be exploited.\itemsep -2pt
+\item[-] Reverse engineer customizations made by vendors/carriers that introduce unprotected native interfaces and write exploits.
+\end{itemize}
+
+\textbf{Systematically Detecting Inconsistent Security Policy Enforcement in the Android Framework} \hfill 08/2014-08/2015
+\begin{itemize}
+\item[-] Designed and implemented Kratos, an automated tool that supports systematic detection of inconsistent security policy enforcement within the Android framework. \itemsep -2pt
+\item[-] Applied Kratos to various versions of Android, discovered more than 10 zero-day vulnerabilities, and filed bug reports to Google. \itemsep -2pt
+\item[-] A paper on this project will appear in NDSS 2016.
+\end{itemize}
+}
+
+%\textbf{Intern} \hfill 06/2016-08/2016\\
+%KNOX team, Samsung Research America
+
+\section{HONORS\\ \& AWARDS}
+Internet of Things (IoT) Technology Research Award, Google \hfill 2016\\
+MobiCom Student Travel Grant \hfill 2015 \\
+CSE Fellowship, University of Michigan \hfill 2014 \\
+Rackham Travel Grant, University of Michigan \hfill 2014,2015 \\
+USENIX Security Student Travel Grant, USENIX Association \hfill 2014,2015 \\
+Excellent Participation in Research Program of Shanghai Jiao Tong University \hfill 2011 \\
+
+\section{HOBBIES}
+Playing guitar, jam with the band, play basketball and travel. 
+\end{resume}
+\end{document}
+
+
+
+
