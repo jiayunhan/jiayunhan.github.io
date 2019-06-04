@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1559669582 "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.tex" "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.pdf" "cv_jack" 1559669582
+["pdflatex"] 1559669582 "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.tex" "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.pdf" "cv_jack" 1559672411
   "/etc/texmf/web2c/texmf.cnf" 1558938800 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.aux" 1559667812 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.tex" 1559669581 7679 f5125fd7cafb58b7d8645a4fb5a20874 ""
+  "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.tex" 1559672411 7679 f5125fd7cafb58b7d8645a4fb5a20874 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm" 1136768653 960 4ab65358b8406f30ef5496c8c096d22b ""
@@ -54,10 +54,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1558938805 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1558938825 3853789 87814bfa945e9a40a2c4bb10d015ec48 ""
   "cv_jack.aux" 1559667812 8 a94a2480d3289e625eea47cd1b285758 ""
-  "cv_jack.tex" 1559669581 7679 f5125fd7cafb58b7d8645a4fb5a20874 ""
+  "cv_jack.tex" 1559672411 7679 f5125fd7cafb58b7d8645a4fb5a20874 ""
   "res.cls" 1559666117 25869 5ae9a32e381a69b17c6777b6334f0238 ""
   (generated)
+  "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.log"
   "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.pdf"
   "cv_jack.log"
   "cv_jack.pdf"
-  "/home/yunhan/Dropbox/homepage/jiayunhan.github.io/cv/cv_jack.log"
