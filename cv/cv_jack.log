@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.22)  10 OCT 2017 14:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2019.5.26)  4 JUN 2019 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -182,8 +182,7 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \f@ncyO@erf=\skip51
 \f@ncyO@olf=\skip52
 \f@ncyO@orf=\skip53
-)
-No file cv_jack.aux.
+) (./cv_jack.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
@@ -255,34 +254,35 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 187--193
+Underfull \hbox (badness 10000) in paragraph at lines 150--156
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 197.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 160.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 160.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 160.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 160.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 160.
  ) 
 Here is how much of TeX's memory you used:
- 5089 strings out of 493029
- 74568 string characters out of 6136234
- 157626 words of memory out of 5000000
+ 5092 strings out of 493029
+ 74598 string characters out of 6136234
+ 157625 words of memory out of 5000000
  8624 multiletter control sequences out of 15000+600000
  12724 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,12n,43p,302b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,11n,43p,302b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cv_jack.pdf (2 pages, 64551 bytes).
+Output written on cv_jack.pdf (3 pages, 64772 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
+ 51 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 4 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
