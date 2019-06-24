@@ -47,24 +47,56 @@
                 <div class="box-content experiences">
                    <div>&nbsp</div>
                    <div class="col-md-12 list-experiences">
+
+                  <h2><i class="fa fa-briefcase"></i>DNN Robustness Benchmark</h2>
+                        <p> <b>Perceptron Benchmark</b> <a href="https://github.com/advboxes/perceptron-benchmark"> [code] </a> is an adversarial toolbox for benchmarking various safety and security properties of deep neural networks. It evaluates DNN robustness based on the minimum perturbation required to fool the target model, and approaches the true robustness by (1) minimizing the empirical upper bound found by applying state-of-the-art attacks, and (2) maximizing the theoretical lower bound found by linear approximaion based verification methods. It is designed to be agnostic to the deep learning frameworks the models are build on, and supports image classification and object detection models on PyTorch, Tensorflow, Keras, and cloud APIS. Documentation is available on <a href="https://perceptron-robustness-benchmark.readthedocs.io/"> [readthedoc] </a>
+                      <div style="display: flex; justify-content: center;">
+                          <p><img style="margin-left: 0px" src="images/research/robustness.png" width="500" align="middle"/> </td>
+                      </div>
+                      <center> DNN robustness measured by the minimum perturbation required for a successful attack </center>
+                        
+
+                  <h2><i class="fa fa-briefcase"></i>Adversarial Machine Learning</h2>
+                        <p> We prototyped a series of adversarial attacks in self-driving car, and machine learning as a service (MLaaS) scenarios, including:
+
+                        <p>&#9658; Physical adversarial patch that fools object detection models
+                        <p>&#9658; Fingerprint attack against commercial MLaaS APIs
+                        <p>&#9658; Adversarial examples that transfer across real-world CV tasks
+                        <p>&#9658; Adversarial attack against multiple object tracking
+
+                        <p>More information can be found in my <a href="publication.html"> [publications]</a>. 
+                        <table class="image" style="float: left; margin: 0px 15px 15px 30px;" align="center">
+                        <tr>
+                          <td>  <img style="margin-left: 50px" src="images/research/adv1.gif" width="260" /> </td>
+                          <td>  <img style="margin-left: 50px" src="images/research/adv2.png" width="300" /> </td>
+                          <td>  <img style="margin-left: 50px"src="images/research/adv3.jpg" width="260" /> </td>
+                        </tr>
+                        <tr>
+                          <td align="center" class="caption"> Physical adversarial patch against object detector </td>
+                          <td align="center" class="caption"> &nbsp &nbsp &nbsp Cross-task adversarial examples generated with dispersion reduction </td>
+                          <td align="right" class="caption"> Adversarial example that fools object tracking</td>
+                        </tr>
+                        </table>
+
+
                   <h2><i class="fa fa-briefcase"></i>Structure-aware Fuzzing</h2>
-                        <p> <b>The OpenCAV project.</b> Our team in U-M has open the development of the autonomous vehicle (AV) to faculties, researchers, students and industrial partners, so that they can test their self-driving functionalities on the road. To ensure the security and safety of the vehicle under the threat model of untrusted 3rd party code that can potentially be flawed, vulnerable or even malicious, we propose the AVGuard approach that brings the static and dynamic vetting of various self-driving functionalities into the testing of AV. More detail can be found in the <a href="https://arxiv.org/pdf/1702.06827.pdf">paper</a>.
+                        <p> <b>Libprotobuf-mutator for Apollo</b> <a href="https://github.com/jiayunhan/libprotobuf-mutator"> [code] </a> is a tool designed to fuzz large programs that consume highly-structured data, e.g., Baidu Apollo autonomous car platform. Traditional fuzzers such as AFL and libfuzzer that mutate inputs using bit-wise operations are very ineffective when the input space is huge and structured. We implements a structure-aware fuzzing tool that learns input format from protocol buffers, and efficiently generate inputs that conform with program specs to enable exploration of deeper program logic. Now integrated in the Apollo project. 
+                        <a href="https://github.com/ApolloAuto/apollo/pull/5223"> [pull request 1]</a>.
+                        <a href="https://github.com/ApolloAuto/apollo/pull/5658"> [pull request 2]</a>.
 
                         <table class="image" style="float: left; margin: 0px 15px 15px 30px;" align="center">
                         <tr>
-                          <td>  <img style="margin-left: 0px" src="images/av/car.png" width="400" /> </td>
-                          <td>  <img style="margin-left: 50px" src="images/av/code.png" width="300" /> </td>
-                          <td>  <img style="margin-left: 50px"src="images/av/trajectory.png" width="160" /> </td>
+                          <td>  <img style="margin-left: 0px" src="images/research/fuzz.png" width="600" /> </td>
+                          <td>  <img style="margin-left: 20px" src="images/research/fuzz.gif" width="400" /> </td>
                         </tr>
                         <tr>
-                          <td align="center" class="caption"> The open autonomous vehicle we tested on </td>
-                          <td align="center" class="caption"> An example path-following self-driving app </td>
-                          <td align="right" class="caption"> The vehicle trajectory when testing the app </td>
+                          <td align="center" class="caption"> Struct-aware fuzzing helps bypass shallow format checks to reach deeper program logic </td>
+                          <td align="center" class="caption"> Finding a null pointer dereference bug Apollo using structure-aware fuzzing </td>
                         </tr>
                         </table>
                         <!--<h1>Conferences</h1>-->
                     <h2><i class="fa fa-briefcase"></i>Autonomous Vehicle Application Security</h2>
-                        <p> <b>The OpenCAV project.</b> Our team in U-M has open the development of the autonomous vehicle (AV) to faculties, researchers, students and industrial partners, so that they can test their self-driving functionalities on the road. To ensure the security and safety of the vehicle under the threat model of untrusted 3rd party code that can potentially be flawed, vulnerable or even malicious, we propose the AVGuard approach that brings the static and dynamic vetting of various self-driving functionalities into the testing of AV. More detail can be found in the <a href="https://arxiv.org/pdf/1702.06827.pdf">paper</a>.
+                        <p> <b>The OpenCAV project.</b> Our team in U-M has open the development of the autonomous vehicle (AV) to faculties, researchers, students and industrial partners, so that they can test their self-driving functionalities on the road. To ensure the security and safety of the vehicle under the threat model of untrusted 3rd party code that can potentially be flawed, vulnerable or even malicious, we propose the AVGuard approach that brings the static and dynamic vetting of various self-driving functionalities into the testing of AV. More detail can be found in the <a href="https://arxiv.org/pdf/1702.06827.pdf">[paper]</a>.
 
                         <table class="image" style="float: left; margin: 0px 15px 15px 30px;" align="center">
                         <tr>
@@ -79,7 +111,7 @@
                         </tr>
                         </table>
 
-                        <p> <b>The TrafficNet project.</b> The enormous effors spent on collecting naturalistic driving data in recent years have resulted in an expansion of publicly available traffic datasets. However, we found that many attempts to utilize these datasets have failed in practice due to a lack of usability concern. We propose <a href="http://141.211.55.164:8081/">TrafficNet</a>, a large-scale and extensible library of naturalistic driving scenarios, aiming at bridging the gap between research datasets and practically usable information for vehicle engineers and researchers. TrafficNet opens not only the scenario library but also the source code of these categorization methods to the public, which will foster more spphisticated and accurate scenario-based categorization algorithms to advance the intelligent transportation research. More detail can be found in the <a href="material/trafficnet_itsc17.pdf">paper</a>
+                        <p> <b>The TrafficNet project.</b> The enormous effors spent on collecting naturalistic driving data in recent years have resulted in an expansion of publicly available traffic datasets. However, we found that many attempts to utilize these datasets have failed in practice due to a lack of usability concern. We propose <a href="http://141.211.55.164:8081/">TrafficNet</a>, a large-scale and extensible library of naturalistic driving scenarios, aiming at bridging the gap between research datasets and practically usable information for vehicle engineers and researchers. TrafficNet opens not only the scenario library but also the source code of these categorization methods to the public, which will foster more spphisticated and accurate scenario-based categorization algorithms to advance the intelligent transportation research. More detail can be found in the <a href="material/trafficnet_itsc17.pdf">[paper]</a>
 
                     </div>
 
@@ -100,7 +132,7 @@
                     </p>
 
                     <p>We design and implement a static analysis tool that can effectively identify and characterize vulnerable open port usage in Android applications. Using this tool, we discovered over 400 vulnerable apps, which can be exploited to cause highly-severe damage such as remotely stealing contacts, photos, and also performing sensitive actions such as malware installation and malicious code execution. </p>
-                    <p> Please visit our <a href="https://sites.google.com/site/openportsec/"> website </a>for more information. </p>
+                    <p> Please visit our <a href="https://sites.google.com/site/openportsec/"> [website]</a>for more information. </p>
                     <p> Featured attack demo: Session hijacking of AirDroid (CVE-2016-5227).</p>
                     <div class="video-item1">
                     <div class="video-container">
@@ -115,7 +147,7 @@
                     <h2><i class="fa fa-briefcase"></i>Smart Home Application Security</h2>
                     <p> We developed an app patching based mechanism to add security logic to commodity SmartApps, which enables the verification of an important property called "Contextual Integrity" in the app runtime. We demonstrate that it introduces only minimal performance overhead, and won't risk much user habituation or annoyance.
                     </p>
-                    <p> Please visit our <a href="https://sites.google.com/site/iotcontextualintegrity/home/"> website </a> for some sample malicious SmartApps we created for testing purpose. </p>
+                    <p> Please visit our <a href="https://sites.google.com/site/iotcontextualintegrity/home/"> [website] </a> for some sample malicious SmartApps we created for testing purpose. </p>
                     </div>
                    
 
@@ -127,7 +159,7 @@
                         <p> We propose a tool called SInspector to expose potential security vulnerabilities in using Unix domain socket. Our analysis revealed some serious vulnerabilities in popular apps and system daemons.</p>
                         <p> Please visit our <a href="https://sites.google.com/site/unixdomainsocketstudy/" > website </a> for more information.
                         <p> Featured attack demo: Privilege Escalation exploiting KingRoot v4.8.2.</p>
-                    <div class="video-item1">
+                    <div class="video-item1" >
                     <div class="video-container">
                         <iframe width="560" height="349" src="https://www.youtube.com/embed/FfafSZNfqcA" frameborder="0" allowfullscreen="true"></iframe>
                     </div></div>                        
