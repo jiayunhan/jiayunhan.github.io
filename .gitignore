@@ -3,3 +3,10 @@
 
 # mac stuff
 .DS_Store 
+*.swp
+.DS_Store
+cv/*.aux
+cv/*.log
+cv/*.dvi
+cv/*.fls
+cv/*.fdb_latexmk

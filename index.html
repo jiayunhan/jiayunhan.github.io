@@ -1,93 +1,450 @@
 ﻿<!DOCTYPE html>
-<html>
-    <head>
-        <title>Yunhan Jia</title>
-        <meta name="author" content="Yunhan Jia">
-        <meta name="keywords" content="yunhan,jia,homepage,yunhan jia, yunhan jack jia">
-        <meta name="description" content="Yunhan Jia's homepage">
-        <meta charset="utf-8">
-        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"/>
-    <link href="css/icon.css" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'/>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,800,700,900' rel='stylesheet' type='text/css'/>
-    <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
-  
-    <link href="css/owl_carousel/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="css/owl_carousel/owl.theme.css" rel="stylesheet" type="text/css" />
-    <link href="css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp" type="text/javascript"></script>
-    <link href="css/responsive.css" rel="stylesheet" type="text/css" />
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yunhan (Jack) Jia</title>
+<meta name="description" content="Yunhan (Jack) Jia — founder of Trenz (AI agents for social commerce). Previously ML security research at ByteDance AI Lab and Baidu X-Lab. Ph.D., University of Michigan.">
+<meta name="author" content="Yunhan Jia">
+<link rel="canonical" href="https://jiayunhan.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yunhan (Jack) Jia">
+<meta property="og:description" content="Founder of Trenz. Previously ML security research at ByteDance and Baidu.">
+<meta property="og:url" content="https://jiayunhan.github.io/">
+<meta property="og:image" content="https://jiayunhan.github.io/assets/portrait.jpg">
+<meta name="twitter:card" content="summary">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23161513'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' fill='%23f4f1ea' text-anchor='middle'%3E[J]%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f3ec; --surface:#fffdf8; --ink:#1b1a17; --muted:#6b675e; --faint:#a39e92;
+  --line:#e2ddd1; --accent:#b23a1e; --accent-soft:#f3e2da;
+  --serif:"Newsreader",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141311; --surface:#1c1b18; --ink:#ece8de; --muted:#a19c90; --faint:#6e6a61;
+  --line:#2d2b27; --accent:#ec7a5a; --accent-soft:#3a231b;
+}}
+:root[data-theme="dark"]{
+  --bg:#141311; --surface:#1c1b18; --ink:#ece8de; --muted:#a19c90; --faint:#6e6a61;
+  --line:#2d2b27; --accent:#ec7a5a; --accent-soft:#3a231b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration-color:var(--faint);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--accent);text-decoration-color:var(--accent)}
+img{max-width:100%;display:block}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+/* nav */
+.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
+.top.scrolled{border-bottom-color:var(--line)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:60px}
+.mark{font:500 15px var(--mono);letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.mark span{color:var(--faint)}
+.top nav{display:flex;gap:22px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.top nav::-webkit-scrollbar{display:none}
+.top nav a{font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap;padding:4px 0;border-bottom:1px solid transparent}
+.top nav a:hover,.top nav a.on{color:var(--ink);border-bottom-color:var(--ink)}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 220px;gap:56px;align-items:start;padding:88px 0 72px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1{font:400 clamp(44px,7vw,68px)/1.02 var(--serif);letter-spacing:-.02em;margin:0 0 24px}
+h1 em{font-style:italic;color:var(--muted)}
+.lede{font:400 21px/1.5 var(--serif);margin:0 0 18px;max-width:34em}
+.hero p{color:var(--muted);margin:0 0 12px;max-width:36em}
+.hero p a{color:var(--ink)}
+.portrait{height:auto;border-radius:4px;aspect-ratio:1;object-fit:cover;filter:saturate(.85);box-shadow:0 1px 0 var(--line)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font:500 13px var(--sans);text-decoration:none;padding:8px 14px;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);transition:border-color .15s,transform .15s}
+.btn:hover{border-color:var(--ink);color:var(--ink);transform:translateY(-1px)}
+.btn svg{width:15px;height:15px}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary:hover{color:var(--bg)}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+.sh{display:grid;grid-template-columns:160px 1fr;gap:32px}
+h2{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 0 0;position:sticky;top:84px;align-self:start}
+h3{font:500 22px/1.3 var(--serif);margin:0 0 8px;letter-spacing:-.005em}
+
+/* news */
+.news{list-style:none;margin:0;padding:0}
+.news li{display:grid;grid-template-columns:92px 1fr;gap:16px;padding:10px 0;border-bottom:1px dashed var(--line)}
+.news li:last-child{border-bottom:0}
+.date{font:400 13px/1.9 var(--mono);color:var(--faint)}
+
+/* research */
+.proj{margin-bottom:44px}
+.proj:last-child{margin-bottom:0}
+.proj p{margin:0 0 10px;color:var(--muted)}
+.proj figure{margin:16px 0 0;background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px;overflow:hidden}
+.proj figure img{margin:0 auto;max-height:300px;object-fit:contain}
+.proj figcaption{font-size:13px;color:var(--faint);margin-top:8px;text-align:center}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
+.tag{font:400 12px var(--mono);padding:2px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent);text-decoration:none}
+a.tag:hover{background:var(--accent);color:var(--bg)}
+.press{font-size:14px;color:var(--faint);margin-top:10px}
+.press a{color:var(--muted)}
+
+/* publications */
+.year{font:400 13px var(--mono);color:var(--faint);margin:28px 0 6px}
+.year:first-child{margin-top:0}
+.pub{padding:12px 0 14px;border-bottom:1px solid var(--line)}
+.pub:last-child{border-bottom:0}
+.pub .t{font:500 18px/1.35 var(--serif);margin:0 0 4px}
+.pub .a{font-size:14px;color:var(--muted);margin:0}
+.pub .a b{color:var(--ink);font-weight:600}
+.pub .v{font-size:14px;color:var(--muted);margin:2px 0 0}
+.venue{font:500 12px var(--mono);color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:1px 6px;margin-right:6px}
+.note{color:var(--accent);font-weight:500}
+.pub .l{display:flex;gap:14px;margin-top:6px;font:400 13px var(--mono)}
+.pub .l a{color:var(--muted)}
+.pub .l a:hover{color:var(--accent)}
+.sub{font:500 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:36px 0 8px}
+
+/* rows (cv) */
+.rows{list-style:none;margin:0 0 28px;padding:0}
+.rows:last-child{margin-bottom:0}
+.rows li{display:grid;grid-template-columns:1fr auto;gap:16px;padding:9px 0;border-bottom:1px solid var(--line)}
+.rows li:last-child{border-bottom:0}
+.rows .r{font:400 13px/1.9 var(--mono);color:var(--faint);white-space:nowrap}
+.rows .s{display:block;font-size:14px;color:var(--muted)}
+
+.misc p{color:var(--muted);margin:0 0 12px}
+.places{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.places span{font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--surface)}
+
+footer{border-top:1px solid var(--line);padding:32px 0 48px;font:400 13px var(--mono);color:var(--faint)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.theme{background:none;border:0;color:var(--faint);font:inherit;cursor:pointer;padding:0}
+.theme:hover{color:var(--ink)}
+
+@media (max-width:760px){
+  .hero{grid-template-columns:1fr;gap:28px;padding:48px 0 48px}
+  .portrait{width:120px;height:auto;order:-1}
+  .sh{grid-template-columns:1fr;gap:16px}
+  h2{position:static}
+  .news li{grid-template-columns:1fr;gap:0}
+  .rows li{grid-template-columns:1fr;gap:0}
+  .wrap{padding:0 16px}
+  .top nav{gap:12px}
+  .top nav a{font-size:13px}
+  .top .wrap{gap:12px}
+  .mark span{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
 </head>
 <body>
-<header>
-    <div id="top" class="container">
-      <div class="row">
-        <nav class="col-md-12">
-          <div class="content-logo"><img src="images/logo1.jpg " align="middle" alt="" /></div>
-          <div class="mini-menu"><i class="fa fa-bars"></i></div>
-          <ul class="col-md-9 col-sm-9 menu">
-            <li class="cl-effect-11 current"><a data-hover="HOME" href="#">HOME</a></li>
-            <li class="cl-effect-11"><a data-hover="PUBLICATION" href="publication.html">PUBLICATION</a></li>
-            <li class="cl-effect-11"><a data-hover="RESEARCH" href="research.html">Research</a></li>
-            <li class="cl-effect-11"><a data-hover="CV" href="cv.html">CV</a></li>
-            <li class="cl-effect-11"><a data-hover="MISC." href="misc.html">MISC.</a></li>
-          </ul>
-        </nav>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a class="mark" href="#"><span>[</span> Yunhan Jia <span>]</span></a>
+    <nav aria-label="Sections">
+      <a href="#news">News</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Papers</a>
+      <a href="#cv">CV</a>
+      <a href="#misc">Misc</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ ABOUT ============ -->
+  <div class="hero" id="about">
+    <div>
+      <p class="eyebrow">Founder · AI Agents · ML Security</p>
+      <h1>Yunhan <em>(Jack)</em> Jia</h1>
+      <p class="lede">I'm the founder of <a href="https://www.trenz.ai/">Trenz</a>, building AI agents for social commerce in Sunnyvale, CA.</p>
+      <p>Before starting Trenz in 2024, I was a Research Scientist at ByteDance AI Lab and a Senior Security Scientist at Baidu X-Lab, working on adversarial machine learning and the security of autonomous vehicles, smart homes and mobile apps.</p>
+      <p>I received my Ph.D. in Computer Science and Engineering from the University of Michigan, advised by Prof. <a href="https://web.eecs.umich.edu/~zmao/">Z. Morley Mao</a>, and my B.E. in Software Engineering from Shanghai Jiao Tong University, advised by Prof. <a href="https://ipads.se.sjtu.edu.cn/pub:members:haibo_chen">Haibo Chen</a>.</p>
+      <div class="links">
+        <a class="btn primary" href="https://www.trenz.ai/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>Trenz</a>
+        <a class="btn" href="cv/cv_jack.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 14h6M9 18h4"/></svg>CV (PDF)</a>
+        <a class="btn" href="https://github.com/jiayunhan">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.4c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.18-3.08-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.8 1.18 1.83 1.18 3.08 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>GitHub</a>
+        <!-- TODO(update): add Google Scholar / LinkedIn / email when available -->
       </div>
     </div>
-  </header>
-	<section id="section1" class="cd-section">
-      <div class="container">
-          <div class="row">
-           <div class="col-md-12">
-             <div class="box-content about">
-		        <!--<h1> SHORT BIO </h1>-->
-                  <div class="col-md-4">
-                    <div class="box-text">
-                        <h2>SHORT BIO</h2>
-                        <p>My name is Yunhan (<b>Jack</b>) Jia. I am currently a Research Scientist at ByteDance AI Lab. </p>
-                        <p>I received my Ph.D. in Computer Science from University of Michigan, supervised by Professor <a href="https://web.eecs.umich.edu/~zmao/">Z. Morley Mao</a>. </p>
-                        <p>I received my B.E. in Software Engineering from Shanghai Jiao Tong University in 2013, advised by Professor <a href="https://ipads.se.sjtu.edu.cn/pub:members:haibo_chen">Haibo Chen</a>.</p>
-                    </div>
-                 </div>
-                 <div class="col-md-4">
-                    <div class="box-img">
-                        <img src="images/self_detroit.JPG" alt="" />
-                    </div>
-                 </div>
-                <div class="col-md-4">
-                    <div class="box-text">
-                        <h2>What's New</h2>
-                        <ul>
-                        <li> <font color="blue">06/09/2019. </font> We open sourced <a href="https://github.com/advboxes/perceptron-benchmark"> Perceptron Benchmark </a> that quantifies DNN robustness using both empirical measurement results and formal verification methods. 
-                        <li> <font color="blue">06/07/2019. </font> Two papers accepted by <a href="https://amlcvpr2019.github.io/"> AdvMLCV </a> workshop, and one selected as oral presentation. 
-                        <li> <font color="blue">06/03/2019. </font> One paper accepted by <a href="https://icml2019workshop.github.io/"> SPML </a> workshop colocated with ICML 2019. 
-                        
-                        </ul>
-                    </div>
-                 </div>
+    <img class="portrait" src="assets/portrait.jpg" width="220" height="220" alt="Portrait of Yunhan Jia">
+  </div>
 
-             </div><!--close box content-->
-		  </div>
-        </div><!--close row-->
-      </div><!--close container-->
-<div style = "display:none">
-<script src="https://bibbase.org/show?bib=http%3A%2F%2Fweb.eecs.umich.edu%2F%7Ejackjia%2Fmaterial%2Fcontexiot_ndss17.bib&jsonp=1"></script>
-            <!--&authorFirst=1-->
-</div>
+  <!-- ============ NEWS ============ -->
+  <!-- TODO(update): add Trenz milestones (launches, funding, press) when public -->
+  <section id="news" class="sh">
+    <h2>News</h2>
+    <ul class="news">
+      <li><span class="date">2024-06</span><span>Founded <a href="https://www.trenz.ai/">Trenz</a> — a team of AI agents that takes social-commerce sellers from product research to content, publishing and ads.</span></li>
+      <li><span class="date">2021</span><span>“Dirty Road Can Attack”, on physical-world attacks against automated lane centering, appears at <b>USENIX Security 2021</b>.</span></li>
+      <li><span class="date">2020</span><span>Papers at <b>ICLR 2020</b> (attacking multiple object tracking), <b>CVPR 2020</b> (cross-task black-box transferability) and <b>FAT* 2020</b> (explainable ML in deployment).</span></li>
+      <li><span class="date">2019-06</span><span>Open-sourced <a href="https://github.com/advboxes/perceptron-benchmark">Perceptron Benchmark</a>, which quantifies DNN robustness with both empirical attacks and formal verification.</span></li>
+      <li><span class="date">2019-06</span><span>Two papers accepted to the <a href="https://amlcvpr2019.github.io/">CVPR AdvMLCV</a> workshop, one selected as a contributed talk.</span></li>
+      <li><span class="date">2019-06</span><span>One paper accepted to the <a href="https://icml2019workshop.github.io/">ICML SPML</a> workshop.</span></li>
+    </ul>
+  </section>
 
-	</section><!-- cd-section -->
+  <!-- ============ RESEARCH ============ -->
+  <section id="research" class="sh">
+    <h2>Research</h2>
+    <div>
+      <article class="proj">
+        <h3>DNN robustness benchmarking</h3>
+        <p>Perceptron Benchmark is a toolbox for measuring the safety and security of deep neural networks. It estimates a model's true robustness from both sides: tightening the empirical upper bound with state-of-the-art attacks, and raising the theoretical lower bound with linear-approximation-based verification. It is framework-agnostic and supports classification and detection models on PyTorch, TensorFlow, Keras and cloud APIs.</p>
+        <div class="tags"><a class="tag" href="https://github.com/advboxes/perceptron-benchmark">code</a><a class="tag" href="https://perceptron-robustness-benchmark.readthedocs.io/">docs</a></div>
+        <figure><img src="assets/r-robustness.jpg" loading="lazy" alt="DNN robustness measured by minimum successful perturbation"><figcaption>Robustness measured by the minimum perturbation required for a successful attack</figcaption></figure>
+      </article>
 
-<hr>
-<script src="js/jquery.min.js" type="text/javascript"></script>
-<script src="js/gallery/isotope.js" type="text/javascript"></script>
-<script src="js/jquery.ui.totop.js" type="text/javascript"></script>
-<script src="js/owl_carousel/owl.carousel.js" type="text/javascript"></script>
-<script src="js/jquery.appear.js" type="text/javascript"></script>
-<script src="js/main.js" type="text/javascript"></script> <!-- Resource jQuery -->
+      <article class="proj">
+        <h3>Adversarial machine learning in the physical world</h3>
+        <p>Attacks on self-driving and ML-as-a-service pipelines: physical adversarial patches that fool object detectors, fingerprinting attacks against commercial MLaaS APIs, adversarial examples that transfer across real-world vision tasks, and the first adversarial attack against multiple object tracking.</p>
+        <div class="tags"><a class="tag" href="#publications">papers</a></div>
+        <figure><img src="assets/r-adv2.jpg" loading="lazy" alt="Cross-task adversarial examples generated with dispersion reduction" style="max-height:360px"><figcaption>Cross-task adversarial examples generated with dispersion reduction</figcaption></figure>
+      </article>
 
+      <article class="proj">
+        <h3>Structure-aware fuzzing</h3>
+        <p>Bit-flipping fuzzers such as AFL and libFuzzer struggle when inputs are large and highly structured. Libprotobuf-mutator for Apollo learns the input format from protocol buffers and generates spec-conforming inputs, reaching deep program logic in the Baidu Apollo autonomous-driving platform. It is now integrated upstream.</p>
+        <div class="tags"><a class="tag" href="https://github.com/jiayunhan/libprotobuf-mutator">code</a><a class="tag" href="https://github.com/ApolloAuto/apollo/pull/5223">PR #5223</a><a class="tag" href="https://github.com/ApolloAuto/apollo/pull/5658">PR #5658</a></div>
+        <figure><img src="assets/r-fuzz.jpg" loading="lazy" alt="Structure-aware fuzzing bypasses shallow format checks"><figcaption>Structure-aware fuzzing bypasses shallow format checks to reach deeper logic</figcaption></figure>
+      </article>
+
+      <article class="proj">
+        <h3>Autonomous vehicle application security</h3>
+        <p><b>OpenCAV / AVGuard.</b> As U-M opened its autonomous vehicle to third-party developers, we built static and dynamic vetting for self-driving apps that may be flawed, vulnerable or malicious.
+        <b>TrafficNet</b> is a large-scale, extensible library of naturalistic driving scenarios that turns research datasets into something vehicle engineers can actually use.</p>
+        <div class="tags"><a class="tag" href="https://arxiv.org/pdf/1702.06827.pdf">AVGuard paper</a><a class="tag" href="https://arxiv.org/abs/1708.01872">TrafficNet paper</a></div>
+        <figure><img src="assets/r-car.jpg" loading="lazy" alt="The open autonomous vehicle used in testing"><figcaption>The open autonomous vehicle we tested on</figcaption></figure>
+      </article>
+
+      <article class="proj">
+        <h3>Mobile &amp; IoT security</h3>
+        <p><b>Open ports in Android apps.</b> A static analysis tool that found 400+ apps with exploitable open ports, enabling remote theft of contacts and photos, malware installation and code execution — including session hijacking of AirDroid (CVE-2016-5227).</p>
+        <p class="press">Covered by <a href="https://www.wired.com/2017/04/obscure-app-flaw-creates-backdoors-millions-smartphones/">WIRED</a>, <a href="https://www.techrepublic.com/article/hundreds-of-popular-android-apps-have-open-ports-making-them-prime-targets-for-hacking/">TechRepublic</a>, <a href="https://mashable.com/2017/04/28/smartphones-hack-android-open-ports-google-play/">Mashable</a>, <a href="https://www.bleepingcomputer.com/news/security/open-ports-create-backdoors-in-millions-of-smartphones/">Bleeping Computer</a>, <a href="https://www.axios.com/google-play-apps-hackers-delight-android-2383559969.html">Axios</a>, <a href="https://www.digitaltrends.com/mobile/google-play-open-port-attacks/">Digital Trends</a> and others.</p>
+        <p><b>ContexIoT.</b> App patching that brings contextual integrity to commodity smart-home apps with minimal overhead. <b>SInspector.</b> Exposes misuse of Unix domain sockets in popular Android apps and system daemons, including a privilege escalation in KingRoot.</p>
+        <div class="tags"><a class="tag" href="https://sites.google.com/site/openportsec/">open ports</a><a class="tag" href="https://sites.google.com/site/iotcontextualintegrity/home/">ContexIoT</a><a class="tag" href="https://sites.google.com/site/unixdomainsocketstudy/">SInspector</a></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section id="publications" class="sh">
+    <h2>Publications</h2>
+    <div>
+      <div class="year">2021</div>
+      <div class="pub">
+        <p class="t">Dirty Road Can Attack: Security of Deep Learning based Automated Lane Centering under Physical-World Attack</p>
+        <p class="a">Takami Sato, Junjie Shen, Ningfei Wang, <b>Yunhan Jia</b>, Xue Lin, Qi Alfred Chen</p>
+        <p class="v"><span class="venue">USENIX Sec'21</span>USENIX Security Symposium</p>
+        <div class="l"><a href="https://arxiv.org/abs/2009.06701">arxiv</a></div>
+      </div>
+
+      <div class="year">2020</div>
+      <div class="pub">
+        <p class="t">Enhancing Cross-Task Black-Box Transferability of Adversarial Examples with Dispersion Reduction</p>
+        <p class="a">Yantao Lu, <b>Yunhan Jia</b>, Jianyu Wang, Bai Li, Weiheng Chai, Lawrence Carin, Senem Velipasalar</p>
+        <p class="v"><span class="venue">CVPR'20</span>IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>
+        <div class="l"><a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Lu_Enhancing_Cross-Task_Black-Box_Transferability_of_Adversarial_Examples_With_Dispersion_Reduction_CVPR_2020_paper.html">pdf</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Explainable Machine Learning in Deployment</p>
+        <p class="a">Umang Bhatt, Alice Xiang, Shubham Sharma, Adrian Weller, Ankur Taly, <b>Yunhan Jia</b>, Joydeep Ghosh, Ruchir Puri, José M. F. Moura, Peter Eckersley</p>
+        <p class="v"><span class="venue">FAT*'20</span>ACM Conference on Fairness, Accountability, and Transparency</p>
+        <div class="l"><a href="https://arxiv.org/abs/1909.06342">arxiv</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Fooling Detection Alone is Not Enough: Adversarial Attack against Multiple Object Tracking</p>
+        <p class="a"><b>Yunhan Jia</b>, Yantao Lu, Junjie Shen, Qi Alfred Chen, Hao Chen, Zhenyu Zhong, Tao Wei</p>
+        <p class="v"><span class="venue">ICLR'20</span>International Conference on Learning Representations</p>
+        <div class="l"><a href="https://openreview.net/forum?id=rJl31TNYPr">openreview</a></div>
+      </div>
+
+      <div class="pub">
+        <p class="t">Towards Practical Lottery Ticket Hypothesis for Adversarial Training</p>
+        <p class="a">Bai Li, Shiqi Wang, <b>Yunhan Jia</b>, Yantao Lu, Zhenyu Zhong, Lawrence Carin, Suman Jana</p>
+        <p class="v"><span class="venue">arXiv</span>Preprint</p>
+        <div class="l"><a href="https://arxiv.org/abs/2003.05733">arxiv</a></div>
+      </div>
+
+      <div class="year">2019</div>
+      <div class="pub">
+        <p class="t">Fooling Detection Alone is Not Enough: First Adversarial Attack against Multiple Object Tracking</p>
+        <p class="a"><b>Yunhan Jia</b>, Yantao Lu, Junjie Shen, Qi Alfred Chen, Zhenyu Zhong, Tao Wei</p>
+        <p class="v"><span class="venue">AdvMLCV'19</span>CVPR Workshop · <span class="note">Contributed talk</span></p>
+        <div class="l"><a href="https://arxiv.org/pdf/1905.11026.pdf">pdf</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Enhancing Cross-task Transferability of Adversarial Examples with Dispersion Reduction</p>
+        <p class="a"><b>Yunhan Jia</b>*, Yantao Lu*, Senem Velipasalar, Zhenyu Zhong, Tao Wei</p>
+        <p class="v"><span class="venue">AdvMLCV'19</span>CVPR Workshop</p>
+        <div class="l"><a href="https://arxiv.org/pdf/1905.03333.pdf">pdf</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Attacking Multiple Object Tracking using Adversarial Examples</p>
+        <p class="a"><b>Yunhan Jia</b>, Yantao Lu, Junjie Shen, Qi Alfred Chen, Zhenyu Zhong, Tao Wei</p>
+        <p class="v"><span class="venue">SPML'19</span>ICML Workshop on Security and Privacy of Machine Learning</p>
+        <div class="l"><a href="https://arxiv.org/abs/1905.11026">arxiv</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">The Cost of Learning from the Best: How Prior Knowledge Weakens the Security of Deep Neural Networks</p>
+        <p class="a"><b>Yunhan Jia</b>, Zhenyu Zhong, Yulong Zhang, Qian Feng, Tao Wei</p>
+        <p class="v"><span class="venue">BH Asia'19</span>Black Hat Asia, Singapore</p>
+        <div class="l"><a href="https://blackhat.com/archive/asia/2019/briefings/schedule/#the-cost-of-learning-from-the-best-how-prior-knowledge-weakens-the-security-of-deep-neural-networks-13723">talk</a></div>
+      </div>
+
+      <div class="year">2018</div>
+      <div class="pub">
+        <p class="t">Perception Deception: Physical Adversarial Attack Challenges and Tactics for DNN-based Object Detection</p>
+        <p class="a"><b>Yunhan Jia</b>, Zhenyu Zhong, Weilin Xu, Tao Wei</p>
+        <p class="v"><span class="venue">BH EU'18</span>Black Hat Europe, London</p>
+        <div class="l"><a href="https://blackhat.com/archive/europe/2018/briefings/schedule/#perception-deception-physical-adversarial-attack-challenges-and-tactics-for-dnn-based-object-detection-12797">talk</a></div>
+      </div>
+
+      <div class="year">2017</div>
+      <div class="pub">
+        <p class="t">Dissecting HAS VOD Services for Cellular: Performance, Root Causes and Best Practices</p>
+        <p class="a">Shichang Xu, <b>Yunhan Jia</b>, Z. Morley Mao, Subhabrata Sen</p>
+        <p class="v"><span class="venue">IMC'17</span>ACM Internet Measurement Conference</p>
+        <div class="l"><a href="https://doi.org/10.1145/3131365.3131386">paper</a><a href="material/dissecting_imc17.bib">bib</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">TrafficNet: An Open Naturalistic Driving Scenario Library</p>
+        <p class="a">Ding Zhao, Yaohui Guo, <b>Yunhan Jia</b></p>
+        <p class="v"><span class="venue">ITSC'17</span>IEEE Intelligent Transportation Systems Conference</p>
+        <div class="l"><a href="https://arxiv.org/abs/1708.01872">arxiv</a><a href="material/trafficnet_itsc17.bib">bib</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Towards Secure and Safe Appified Automated Vehicles</p>
+        <p class="a"><b>Yunhan Jia</b>, Ding Zhao, Qi Alfred Chen, Z. Morley Mao</p>
+        <p class="v"><span class="venue">IV'17</span>IEEE Intelligent Vehicles Symposium</p>
+        <div class="l"><a href="https://arxiv.org/pdf/1702.06827.pdf">pdf</a><a href="material/towards_iv17.bib">bib</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">ContexIoT: Towards Providing Contextual Integrity to Appified IoT Platforms</p>
+        <p class="a"><b>Yunhan Jia</b>, Qi Alfred Chen, Shiqi Wang, Amir Rahmati, Earlence Fernandes, Z. Morley Mao, Atul Prakash</p>
+        <p class="v"><span class="venue">NDSS'17</span>Network and Distributed System Security Symposium · 16.0% acceptance</p>
+        <div class="l"><a href="https://doi.org/10.14722/ndss.2017.23051">paper</a><a href="material/contexiot_ndss17.bib">bib</a><a href="https://sites.google.com/site/iotcontextualintegrity/home/">website</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Open Doors for Bob and Mallory: Open Port Usage in Android Apps and Security Implications</p>
+        <p class="a"><b>Yunhan Jia</b>, Qi Alfred Chen, Yikai Lin, Chao Kong, Z. Morley Mao</p>
+        <p class="v"><span class="venue">EuroS&amp;P'17</span>IEEE European Symposium on Security and Privacy · 19.8% acceptance</p>
+        <div class="l"><a href="https://doi.org/10.1109/EuroSP.2017.44">paper</a><a href="material/open_euro17.bib">bib</a><a href="https://sites.google.com/site/openportsec/">website</a></div>
+      </div>
+
+      <div class="year">2016</div>
+      <div class="pub">
+        <p class="t">The Misuse of Android Unix Domain Sockets and Security Implications</p>
+        <p class="a">Yuru Shao, Jason Ott, <b>Yunhan Jia</b>, Zhiyun Qian, Z. Morley Mao</p>
+        <p class="v"><span class="venue">CCS'16</span>ACM Conference on Computer and Communications Security · 16.5% acceptance</p>
+        <div class="l"><a href="https://doi.org/10.1145/2976749.2978297">paper</a><a href="material/misuse_ccs16.bib">bib</a><a href="https://sites.google.com/site/unixdomainsocketstudy/">website</a></div>
+      </div>
+
+      <div class="year">2015</div>
+      <div class="pub">
+        <p class="t">Static Detection of Packet Injection Vulnerabilities: A Case for Identifying Attacker-controlled Implicit Information Leaks</p>
+        <p class="a">Qi Alfred Chen, Zhiyun Qian, <b>Yunhan Jia</b>, Yuru Shao, Z. Morley Mao</p>
+        <p class="v"><span class="venue">CCS'15</span>ACM Conference on Computer and Communications Security · 19.8% acceptance</p>
+        <div class="l"><a href="https://doi.org/10.1145/2810103.2813643">paper</a><a href="material/static_ccs15_slides.pptx">slides</a><a href="material/static_ccs15.bib">bib</a><a href="https://sites.google.com/site/packetinjectionvulnerability/">website</a></div>
+      </div>
+      <div class="pub">
+        <p class="t">Performance Characterization and Call Reliability Problem Diagnosis for Voice over LTE</p>
+        <p class="a"><b>Yunhan Jia</b>, Qi Alfred Chen, Z. Morley Mao, Jie Hui, Kranthi Sontineni, Alex Yoon, Samson Kwong, Kevin Lau</p>
+        <p class="v"><span class="venue">MobiCom'15</span>ACM International Conference on Mobile Computing and Networking · 18.4% acceptance</p>
+        <div class="l"><a href="https://doi.org/10.1145/2789168.2790095">paper</a><a href="material/performance_mobicom15.bib">bib</a></div>
+      </div>
+
+      <p class="sub">Patents</p>
+      <ul class="rows">
+        <li><span>Cross-Layer Link Failure Alerts</span><span class="r">US 2016/0065433</span></li>
+        <li><span>Pathway-Based Data Interruption Detection</span><span class="r">US 2016/0277952</span></li>
+        <li><span>Monitoring Wireless Data Consumption</span><span class="r">US 2017/0005989</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CV ============ -->
+  <!-- CV: experience, education, service, honors -->
+  <section id="cv" class="sh">
+    <h2>CV</h2>
+    <div>
+      <p class="sub" style="margin-top:0">Experience</p>
+      <ul class="rows">
+        <li><span>Founder<span class="s"><a href="https://www.trenz.ai/">Trenz</a>, Sunnyvale</span></span><span class="r">2024 –</span></li>
+        <li><span>Research Scientist<span class="s">ByteDance AI Lab, Palo Alto</span></span><span class="r">2019 – 2024</span></li>
+        <li><span>Senior Security Scientist<span class="s">Baidu X-Lab, Sunnyvale</span></span><span class="r">2018 – 2019</span></li>
+        <li><span>Threat Research Intern<span class="s">Palo Alto Networks, Santa Clara</span></span><span class="r">2017</span></li>
+        <li><span>Intern, QoE Lab<span class="s">T-Mobile US, Seattle</span></span><span class="r">2014, 2015</span></li>
+        <li><span>Intern, CCS Lab<span class="s">Microsoft APGC, China</span></span><span class="r">2012</span></li>
+      </ul>
+      <p class="sub">Education</p>
+      <ul class="rows">
+        <li><span>Ph.D., Computer Science and Engineering<span class="s">University of Michigan, Ann Arbor</span></span><span class="r">2013 – 2018</span></li>
+        <li><span>B.E., Software Engineering<span class="s">Shanghai Jiao Tong University</span></span><span class="r">2009 – 2013</span></li>
+      </ul>
+      <p class="sub">Service</p>
+      <ul class="rows">
+        <li><span>PC Member, ICML Workshop on Security and Privacy of ML (<a href="https://icml2019workshop.github.io/">SPML</a>)</span><span class="r">2019</span></li>
+        <li><span>PC Member, CVPR Workshop on Adversarial ML in Real-World CV Systems (<a href="https://amlcvpr2019.github.io/">AdvMLCV</a>)</span><span class="r">2019</span></li>
+        <li><span>PC Member, ACM Workshop on Automotive Cybersecurity (AutoSec)</span><span class="r">2019</span></li>
+      </ul>
+      <p class="sub">Honors</p>
+      <ul class="rows">
+        <li><span>Internet of Things Technology Research Award, Google</span><span class="r">2016</span></li>
+        <li><span>CSE Fellowship, University of Michigan</span><span class="r">2014</span></li>
+        <li><span>Excellent Participation in Research Program, SJTU</span><span class="r">2011</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ MISC ============ -->
+  <section id="misc" class="sh misc">
+    <h2>Misc</h2>
+    <div>
+      <h3>Playing in the band</h3>
+      <p>Classic rock has had me since 7th grade, and I've played guitar in bands ever since. Favourite band of all time: <strong>Guns N' Roses</strong>; the boss of vocals will always be Steven Tyler. A few memories of jamming with friends: <a href="images/pic5.jpg">junior</a>, <a href="images/pic3.jpg">senior</a>, <a href="images/pic6.jpg">graduation</a>, <a href="images/pic1.jpg">grad school</a>.</p>
+      <h3 style="margin-top:28px">Travel</h3>
+      <p>Hometown Xinjiang. Favourite place so far: <b>Cefalù</b>, Sicily.</p>
+      <div class="places">
+        <span>China</span><span>Denmark</span><span>France</span><span>Italy</span><span>Japan</span><span>Malaysia</span><span>United States</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© Yunhan Jia</span>
+    <button class="theme" type="button" id="theme">toggle theme</button>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top');
+  addEventListener('scroll',function(){top.classList.toggle('scrolled',scrollY>8)},{passive:true});
+  var root=document.documentElement,btn=document.getElementById('theme');
+  try{var t=localStorage.getItem('theme');if(t)root.dataset.theme=t}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+    root.dataset.theme=dark?'light':'dark';
+    try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+  });
+  var links=[].slice.call(document.querySelectorAll('.top nav a'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+    document.querySelectorAll('main section').forEach(function(s){io.observe(s)});
+  }
+})();
+</script>
 </body>
 </html>
