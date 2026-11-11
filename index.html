@@ -11,8 +11,11 @@
 <meta property="og:title" content="Yunhan (Jack) Jia">
 <meta property="og:description" content="Founder of Trenz. Previously ML security research at ByteDance and Baidu.">
 <meta property="og:url" content="https://jiayunhan.github.io/">
-<meta property="og:image" content="https://jiayunhan.github.io/assets/portrait.jpg">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://jiayunhan.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yunhan (Jack) Jia — Founder, Trenz">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23161513'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' fill='%23f4f1ea' text-anchor='middle'%3E[J]%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,16 +23,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f6f3ec; --surface:#fffdf8; --ink:#1b1a17; --muted:#6b675e; --faint:#a39e92;
+  --bg:#f6f3ec; --surface:#fffdf8; --ink:#1b1a17; --muted:#5c5951; --faint:#726d61;
   --line:#e2ddd1; --accent:#b23a1e; --accent-soft:#f3e2da;
   --serif:"Newsreader",Georgia,serif; --sans:"Inter",system-ui,-apple-system,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#141311; --surface:#1c1b18; --ink:#ece8de; --muted:#a19c90; --faint:#6e6a61;
+  --bg:#141311; --surface:#1c1b18; --ink:#ece8de; --muted:#a19c90; --faint:#868176;
   --line:#2d2b27; --accent:#ec7a5a; --accent-soft:#3a231b;
 }}
 :root[data-theme="dark"]{
-  --bg:#141311; --surface:#1c1b18; --ink:#ece8de; --muted:#a19c90; --faint:#6e6a61;
+  --bg:#141311; --surface:#1c1b18; --ink:#ece8de; --muted:#a19c90; --faint:#868176;
   --line:#2d2b27; --accent:#ec7a5a; --accent-soft:#3a231b;
 }
 *{box-sizing:border-box}
@@ -85,7 +88,7 @@ h3{font:500 22px/1.3 var(--serif);margin:0 0 8px;letter-spacing:-.005em}
 .proj p{margin:0 0 10px;color:var(--muted)}
 .proj figure{margin:16px 0 0;background:#fff;border:1px solid var(--line);border-radius:6px;padding:12px;overflow:hidden}
 .proj figure img{margin:0 auto;max-height:300px;object-fit:contain}
-.proj figcaption{font-size:13px;color:var(--faint);margin-top:8px;text-align:center}
+.proj figcaption{font-size:13px;color:#726d61;margin-top:8px;text-align:center}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 0}
 .tag{font:400 12px var(--mono);padding:2px 8px;border-radius:4px;background:var(--accent-soft);color:var(--accent);text-decoration:none}
 a.tag:hover{background:var(--accent);color:var(--bg)}
@@ -140,6 +143,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yunhan Jia",
+  "alternateName": "Jack Jia",
+  "jobTitle": "Founder",
+  "worksFor": {"@type": "Organization", "name": "Trenz", "url": "https://www.trenz.ai/"},
+  "workLocation": {"@type": "Place", "name": "Sunnyvale, CA", "address": {"@type": "PostalAddress", "addressLocality": "Sunnyvale", "addressRegion": "CA"}},
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "University of Michigan"},
+    {"@type": "CollegeOrUniversity", "name": "Shanghai Jiao Tong University"}
+  ],
+  "url": "https://jiayunhan.github.io/",
+  "image": "https://jiayunhan.github.io/assets/portrait.jpg",
+  "sameAs": ["https://github.com/jiayunhan"]
+}
+</script>
 </head>
 <body>
 
@@ -176,7 +197,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <!-- TODO(update): add Google Scholar / LinkedIn / email when available -->
       </div>
     </div>
-    <img class="portrait" src="assets/portrait.jpg" width="220" height="220" alt="Portrait of Yunhan Jia">
+    <img class="portrait" src="assets/portrait.jpg" width="220" height="220" alt="Portrait of Yunhan Jia" loading="eager" fetchpriority="high">
   </div>
 
   <!-- ============ NEWS ============ -->
@@ -201,21 +222,21 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <h3>DNN robustness benchmarking</h3>
         <p>Perceptron Benchmark is a toolbox for measuring the safety and security of deep neural networks. It estimates a model's true robustness from both sides: tightening the empirical upper bound with state-of-the-art attacks, and raising the theoretical lower bound with linear-approximation-based verification. It is framework-agnostic and supports classification and detection models on PyTorch, TensorFlow, Keras and cloud APIs.</p>
         <div class="tags"><a class="tag" href="https://github.com/advboxes/perceptron-benchmark">code</a><a class="tag" href="https://perceptron-robustness-benchmark.readthedocs.io/">docs</a></div>
-        <figure><img src="assets/r-robustness.jpg" loading="lazy" alt="DNN robustness measured by minimum successful perturbation"><figcaption>Robustness measured by the minimum perturbation required for a successful attack</figcaption></figure>
+        <figure><img src="assets/r-robustness.jpg" loading="lazy" decoding="async" alt="DNN robustness measured by minimum successful perturbation"><figcaption>Robustness measured by the minimum perturbation required for a successful attack</figcaption></figure>
       </article>
 
       <article class="proj">
         <h3>Adversarial machine learning in the physical world</h3>
         <p>Attacks on self-driving and ML-as-a-service pipelines: physical adversarial patches that fool object detectors, fingerprinting attacks against commercial MLaaS APIs, adversarial examples that transfer across real-world vision tasks, and the first adversarial attack against multiple object tracking.</p>
         <div class="tags"><a class="tag" href="#publications">papers</a></div>
-        <figure><img src="assets/r-adv2.jpg" loading="lazy" alt="Cross-task adversarial examples generated with dispersion reduction" style="max-height:360px"><figcaption>Cross-task adversarial examples generated with dispersion reduction</figcaption></figure>
+        <figure><img src="assets/r-adv2.jpg" loading="lazy" decoding="async" alt="Cross-task adversarial examples generated with dispersion reduction" style="max-height:360px"><figcaption>Cross-task adversarial examples generated with dispersion reduction</figcaption></figure>
       </article>
 
       <article class="proj">
         <h3>Structure-aware fuzzing</h3>
         <p>Bit-flipping fuzzers such as AFL and libFuzzer struggle when inputs are large and highly structured. Libprotobuf-mutator for Apollo learns the input format from protocol buffers and generates spec-conforming inputs, reaching deep program logic in the Baidu Apollo autonomous-driving platform. It is now integrated upstream.</p>
         <div class="tags"><a class="tag" href="https://github.com/jiayunhan/libprotobuf-mutator">code</a><a class="tag" href="https://github.com/ApolloAuto/apollo/pull/5223">PR #5223</a><a class="tag" href="https://github.com/ApolloAuto/apollo/pull/5658">PR #5658</a></div>
-        <figure><img src="assets/r-fuzz.jpg" loading="lazy" alt="Structure-aware fuzzing bypasses shallow format checks"><figcaption>Structure-aware fuzzing bypasses shallow format checks to reach deeper logic</figcaption></figure>
+        <figure><img src="assets/r-fuzz.jpg" loading="lazy" decoding="async" alt="Structure-aware fuzzing bypasses shallow format checks"><figcaption>Structure-aware fuzzing bypasses shallow format checks to reach deeper logic</figcaption></figure>
       </article>
 
       <article class="proj">
@@ -223,7 +244,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <p><b>OpenCAV / AVGuard.</b> As U-M opened its autonomous vehicle to third-party developers, we built static and dynamic vetting for self-driving apps that may be flawed, vulnerable or malicious.
         <b>TrafficNet</b> is a large-scale, extensible library of naturalistic driving scenarios that turns research datasets into something vehicle engineers can actually use.</p>
         <div class="tags"><a class="tag" href="https://arxiv.org/pdf/1702.06827.pdf">AVGuard paper</a><a class="tag" href="https://arxiv.org/abs/1708.01872">TrafficNet paper</a></div>
-        <figure><img src="assets/r-car.jpg" loading="lazy" alt="The open autonomous vehicle used in testing"><figcaption>The open autonomous vehicle we tested on</figcaption></figure>
+        <figure><img src="assets/r-car.jpg" loading="lazy" decoding="async" alt="The open autonomous vehicle used in testing"><figcaption>The open autonomous vehicle we tested on</figcaption></figure>
       </article>
 
       <article class="proj">
@@ -365,9 +386,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
       <p class="sub">Patents</p>
       <ul class="rows">
-        <li><span>Cross-Layer Link Failure Alerts</span><span class="r">US 2016/0065433</span></li>
-        <li><span>Pathway-Based Data Interruption Detection</span><span class="r">US 2016/0277952</span></li>
-        <li><span>Monitoring Wireless Data Consumption</span><span class="r">US 2017/0005989</span></li>
+        <li><span><a href="https://patents.google.com/patent/US20180192303A1">Machine Learning-based Troubleshooting of VoLTE Calls</a></span><span class="r">US 2018/0192303</span></li>
+        <li><span><a href="https://patents.google.com/patent/US20170366943A1">Indoor/Outdoor Coverage Detection Based on Sensor Inputs</a></span><span class="r">US 2017/0366943</span></li>
+        <li><span><a href="https://patents.google.com/patent/US20170005989A1">Monitoring Wireless Data Consumption</a></span><span class="r">US 2017/0005989</span></li>
+        <li><span><a href="https://patents.google.com/patent/US20160277952A1">Pathway-Based Data Interruption Detection</a></span><span class="r">US 2016/0277952</span></li>
+        <li><span><a href="https://patents.google.com/patent/US20160065433A1">Cross-Layer Link Failure Alerts</a></span><span class="r">US 2016/0065433</span></li>
       </ul>
     </div>
   </section>
